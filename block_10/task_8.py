@@ -17,9 +17,7 @@ size = int(input('Введите число: '))
 for i in range(1, size + 1):
     for j in range(i):
         print(size - j, end='')
-    for j in range(size - i):
-        print('.', end='')
-    for j in range(size - i):
+    for j in range(2 * (size - i)):
         print('.', end='')
     for j in range(i):
         print(size + 1 - (i - j), end='')
